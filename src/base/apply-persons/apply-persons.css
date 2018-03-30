@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+.perimg {
+  display: inline-block;
+  margin-right: 0.10667rem; }
+  .perimg img {
+    width: 0.77333rem;
+    height: 0.77333rem;
+    border-radius: 0.77333rem; }
+
+.iconmore {
+  width: 0.77333rem;
+  height: 0.77333rem;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url("./more@2x.png"); }
+  @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    .iconmore {
+      background-image: url("./more@3x.png"); } }

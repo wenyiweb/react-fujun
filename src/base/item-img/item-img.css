@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+.img {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-top: 50%; }
+  .img img {
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 0; }
+  .img .remain-day {
+    position: absolute;
+    right: 0;
+    top: 0.26667rem;
+    width: 2.08rem;
+    height: 1.04rem;
+    display: table;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("./list@2x.png"); }
+    @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+      .img .remain-day {
+        background-image: url("./list@3x.png"); } }
+    .img .remain-day.end {
+      height: 0.48rem;
+      background-image: url("./detail@2x.png"); }
+      @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .img .remain-day.end {
+          background-image: url("./detail@3x.png"); } }
+    .img .remain-day span {
+      font-size: 0.26667rem;
+      line-height: 0.4rem;
+      color: #FFF;
+      text-align: center;
+      display: table-cell;
+      vertical-align: middle; }

@@ -1,0 +1,82 @@
+@import "../../commons/scss/variable";
+@import "../../commons/scss/base";
+@import "../../commons/scss/mixin";
+.try-item{
+	position: relative;
+	width: 92%;
+	margin: 0 auto;
+	background-color:#fff;
+	border-radius:10*$n;
+	margin-bottom:20*$n;
+	overflow: hidden;
+	&:first-child{
+	  margin-top: 20*$n;
+	}
+	.infos{
+	  position: relative;
+	  padding:0 34*$n 20*$n 32*$n;
+	  margin-top:20*$n;
+	  @include border-1px($color-e9);
+	  .apply-btn{
+	    width:130*$n;
+	    height:44*$n;
+	    position: absolute;
+	    right:32*$n;
+	    bottom:20*$n;
+	    .toapply{
+	      font-size:22*$n;
+	      line-height: 44*$n;
+	      background-color: $origin;
+	      display: block;
+	      border-radius:44*$n;
+	      text-align:center;
+	      color: #fff;
+	    }
+	  }
+	  .reportNum{
+	    position:absolute;
+	    right:30*$n;
+	    bottom:22*$n;
+	    height:40*$n;
+	    span{
+	      font-size:24*$n;
+	      line-height: 40*$n;
+	      display: block;
+	    }
+	  }
+	}
+	.apply-pers{
+	  font-size: 0;
+	  padding: 25*$n 36*$n 26*$n 32*$n;
+	  box-sizing: border-box;
+	  width: 100%;
+	  .persons{
+	    display: inline-block;
+	    height: 58*$n;
+	  }
+	  .apply-num{
+	    font-size: 24*$n;
+	    line-height: 28*$n;
+	    text-align: right;
+	    color: $origin;
+	    float:right;
+	    margin-top: 16*$n;
+	  }
+	  .to-view-list{
+	    float:right;
+	    font-size: 0;
+	    margin-top: 15*$n;
+	    height: 28*$n;
+	    span{
+	      font-size:24*$n;
+	      color: $origin;
+	      line-height: 28*$n;
+	      display: inline-block;
+	      vertical-align: top;
+	    }
+	    i{
+
+	    }
+	  }
+	}
+}

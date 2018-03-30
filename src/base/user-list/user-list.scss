@@ -1,0 +1,50 @@
+@import "../../commons/scss/base";
+@import "../../commons/scss/mixin";
+  .apply-list{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    padding-bottom: 100*$n;
+  }
+  .apply-item{
+    display: flex;
+    padding:26*$n 0 0 30*$n;
+    overflow: hidden;
+    &:nth-last-child(2){
+      .content{
+        @include border-none();
+      }
+    }
+    .avatar{
+      width:90*$n;
+      height:90*$n;
+      border-radius:50%;
+      overflow: hidden;
+      margin-right:14*$n;
+      img{
+        width:100%;
+        height:100%;
+      }
+    }
+    .content{
+      flex:1;
+      padding-bottom:20*$n;
+      @include border-1px($color-e9);
+      .name{
+        font-size:24*$n;
+        line-height: 34*$n;
+        color: $color-102;
+      }
+      .desc{
+        padding-right:30*$n;
+        font-size:26*$n;
+        line-height: 42*$n;
+        margin-top:10*$n;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-line-clamp:3;
+        text-overflow: ellipsis;
+        -webkit-box-orient:vertical;
+      }
+    }
+  }

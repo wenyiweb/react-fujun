@@ -1,0 +1,30 @@
+  @import "../../commons/scss/variable";
+  @import "../../commons/scss/mixin";
+
+  .star{
+    font-size: 0;
+    .star-item{
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+    &.star-16{
+      .star-item{
+        width:16*$n;
+        height:16*$n;
+        margin-right: 7*$n;
+        background-size:16*$n 16*$n;
+        &:last-child{
+          margin-right:0;
+        }
+        &.on{
+          @include bg-image('./star16_full');
+        }
+        &.half{
+          @include bg-image('./star16_half');
+        }
+        &.off{
+          @include bg-image('./star16_empty');
+        }
+      }
+    }
+  }

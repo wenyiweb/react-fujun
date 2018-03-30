@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+.line {
+  width: 100%;
+  height: 0.26667rem;
+  background-color: #f2f7f7; }

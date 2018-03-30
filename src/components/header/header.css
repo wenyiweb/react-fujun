@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+html, body {
+  line-height: 1;
+  font-weight: 200;
+  font-family: 'PingFang SC','Helvetica Neue',Helvetica,STHeiTi,Arial,sans-serif;
+  max-width: 540px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none; }
+
+.detail-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  background-color: #fff;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.trygoods {
+  max-width: 540px; }
+
+.list-load-tip {
+  font-size: 0.32rem;
+  line-height: 0.53333rem;
+  height: 0.53333rem;
+  color: #000;
+  width: 100%;
+  text-align: center; }
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+
+.tab {
+  display: flex;
+  width: 100%;
+  height: 1.06667rem;
+  line-height: 1.06667rem;
+  background-color: #fff;
+  position: relative; }
+  .tab .tab-item {
+    flex: 1;
+    text-align: center; }
+    .tab .tab-item > a {
+      display: block;
+      font-size: 0.37333rem;
+      color: #000;
+      text-decoration: none; }
+      .tab .tab-item > a.active {
+        color: #FF8B3B;
+        position: relative; }
+        .tab .tab-item > a.active:after {
+          content: '';
+          display: block;
+          width: 100%;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          border-top: 1px solid #FF8B3B;
+          transform: scaleY(0.6); }

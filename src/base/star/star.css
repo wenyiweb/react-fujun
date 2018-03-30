@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+.star {
+  font-size: 0; }
+  .star .star-item {
+    display: inline-block;
+    background-repeat: no-repeat; }
+  .star.star-16 .star-item {
+    width: 0.21333rem;
+    height: 0.21333rem;
+    margin-right: 0.09333rem;
+    background-size: 0.21333rem 0.21333rem; }
+    .star.star-16 .star-item:last-child {
+      margin-right: 0; }
+    .star.star-16 .star-item.on {
+      background-image: url("./star16_full@2x.png"); }
+      @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .star.star-16 .star-item.on {
+          background-image: url("./star16_full@3x.png"); } }
+    .star.star-16 .star-item.half {
+      background-image: url("./star16_half@2x.png"); }
+      @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .star.star-16 .star-item.half {
+          background-image: url("./star16_half@3x.png"); } }
+    .star.star-16 .star-item.off {
+      background-image: url("./star16_empty@2x.png"); }
+      @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+        .star.star-16 .star-item.off {
+          background-image: url("./star16_empty@3x.png"); } }

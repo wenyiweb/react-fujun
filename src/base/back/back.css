@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/*字体颜色*/
+/*边框颜色*/
+.back {
+  position: absolute;
+  top: 0.26667rem;
+  left: 0.26667rem;
+  width: 0.72rem;
+  height: 0.72rem;
+  z-index: 50;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-size: 0.72rem 0.72rem;
+  border: 0.13333rem solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  background-image: url("./return@2x.png"); }
+  @media (-webkit-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+    .back {
+      background-image: url("./return@3x.png"); } }

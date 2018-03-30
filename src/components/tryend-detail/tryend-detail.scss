@@ -1,0 +1,145 @@
+@import "../../commons/scss/base";
+@import "../../commons/scss/mixin";
+  ::-webkit-scrollbar {
+    display: none
+  }
+  .slide-enter-active,.slide-leave-active{
+    transition:all 0.3s;
+  }
+  .slide-enter,.slide-leave-to{
+    transform:translate3d(100%, 0, 0);
+  }
+  .infos{
+    position: relative;
+    padding:0 30*$n 10*$n 30*$n;
+    margin-top:20*$n;
+    @include border-1px($color-e9);
+  }
+  .apply-persons{
+    padding:26*$n 30*$n;
+    font-size:0;
+    .title{
+      color: $origin;
+      font-size:28*$n;
+      line-height: 58*$n;
+      display: inline-block;
+      vertical-align: top;
+      margin-right:36*$n;
+    }
+    .persons{
+      display: inline-block;
+    }
+    .origin-arrow{
+      display: block;
+      float: right;
+      margin-top:18*$n;
+    }
+  }
+  .report-conter{
+    background-color: #fff;
+    .title{
+      font-size:28*$n;
+      line-height: 80*$n;
+      height: 80*$n;
+      padding-left:30*$n;
+      color: #000;
+      @include border-1px($color-e9);
+    }
+    .nodata{
+      width:100%;
+      text-align: center;
+      font-size:24*$n;
+      line-height: 40*$n;
+      margin-top:20*$n;
+    }
+    .report-list{
+      padding:0 30*$n;
+    }
+    .report-item{
+      display: flex;
+      padding:20*$n 0 30*$n 0;
+      @include border-1px($color-e9);
+      &:last-child {
+        @include border-none();
+      }
+      .avatar{
+        flex:0 0 44*$n;
+        width:44*$n;
+        margin-right:8*$n;
+        img{
+          width:44*$n;
+          height:44*$n;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+      }
+      .content{
+        flex:1;
+        overflow: hidden;
+        .user-info{
+          position: relative;
+          .username{
+            font-size:24*$n;
+            line-height: 44*$n;
+            color: $color-102;
+          }
+          .star-wrapper{
+            float: right;
+            margin-top:14*$n;
+            .star{
+              float: left;
+            }
+            .score{
+              font-size:22*$n;
+              color: $origin;
+              float: right;
+              line-height: 30*$n;
+              margin-top:-7*$n;
+              margin-left:12*$n;
+            }
+          }
+        }
+        .desc{
+          font-size:26*$n;
+          line-height:42*$n;
+          color: #000;
+          text-align: justify;
+          margin-top:8*$n;
+          display: -webkit-box;
+          -webkit-line-clamp:4;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          -webkit-box-orient:vertical;
+        }
+        .pic-wrapper{
+          height: 150*$n;
+          margin-top:20*$n;
+          width:100%;
+          overflow: hidden;
+
+          .pic-list{
+            height: 150*$n;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width:100%;
+            overflow-y:hidden;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+          }
+          .pic-item{
+            width:150*$n;
+            height:150*$n;
+            overflow: hidden;
+            margin-right:10*$n;
+            flex:0 0 150*$n;
+            position: relative;
+            img{
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }

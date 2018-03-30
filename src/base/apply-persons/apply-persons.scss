@@ -1,0 +1,19 @@
+@import "../../commons/scss/variable";
+@import "../../commons/scss/mixin";
+.perimg{
+	display: inline-block;
+	margin-right:8*$n;
+	img{
+	  width:58*$n;
+	  height:58*$n;
+	  border-radius:58*$n;
+	}
+}
+.iconmore{
+	width:58*$n;
+	height:58*$n;
+	display: inline-block;
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	@include bg-image('./more');
+}

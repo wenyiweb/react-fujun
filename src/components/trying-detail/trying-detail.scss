@@ -1,0 +1,80 @@
+@import "../../commons/scss/base";
+@import "../../commons/scss/mixin";
+  .slide-enter-active,.slide-leave-active{
+    transition:all 0.3s;
+  }
+  .slide-enter,.slide-leave-to{
+    transform:translate3d(100%,0,0)
+  }
+  .infos{
+    position: relative;
+    padding:0 30*$n 10*$n 30*$n;
+    margin-top:20*$n;
+  }
+  .apply-persons{
+    padding:0 30*$n 30*$n 30*$n;
+    font-size: 0;
+    .persons{
+      display: inline-block;
+    }
+    .apply-num{
+      float:right;
+      font-size:24*$n;
+      line-height: 40*$n;
+      color: $origin;
+      display: block;
+      margin-top:8*$n;
+    }
+  }
+  .product-detail,.rule{
+    background-color: #fff;
+    .title{
+      font-size:28*$n;
+      line-height: 80*$n;
+      height: 80*$n;
+      padding-left:30*$n;
+      color: #000;
+      @include border-1px($color-e9);
+    }
+    .desc {
+      padding: 20*$n 30*$n 46*$n 30*$n;
+      color: $color-153;
+      position: relative;
+      p {
+        font-size: 24*$n;
+        line-height: 40*$n;
+      }
+    }
+  }
+  .product-detail{
+    .desc{
+      p{
+        &.source{
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp:4;
+          text-overflow: ellipsis;
+          /* autoprefixer: off */
+		      -webkit-box-orient: vertical; // 参考 https://github.com/postcss/autoprefixer/issues/776
+        }
+
+      }
+      .open-btn{
+        position: absolute;
+        bottom:0;
+        left:50%;
+        margin-left:-14*$n;
+        padding:15*$n;
+        width:28*$n;
+        height:16*$n;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:28*$n 16*$n;
+        @include bg-image('./arrow');
+        transition:all .3s;
+        &.opened{
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }

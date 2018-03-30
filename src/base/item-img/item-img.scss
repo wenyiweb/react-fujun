@@ -1,0 +1,33 @@
+@import "../../commons/scss/_variable";
+@import "../../commons/scss/_mixin";
+
+.img{
+    position:relative;
+    height: 0;
+    overflow: hidden;
+    padding-top: 50%;
+    img{max-width: 100%;display: block;position: absolute;top: 0;}
+    .remain-day{
+      position: absolute;
+      right: 0;
+      top:20*$n;
+      width:156*$n;
+      height:78*$n;
+      display: table;
+      background-repeat:no-repeat;
+      background-size:100% 100%;
+      @include bg-image('./list');
+      &.end{
+        height:36*$n;
+        @include bg-image('./detail');
+      }
+      span{
+        font-size:20*$n;
+        line-height: 30*$n;
+        color: #FFF;
+        text-align: center;
+        display:table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
